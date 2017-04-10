@@ -5,6 +5,7 @@ const app = new App();
 const containerElement = document.getElementById('app');
 
 setPropertyDidChange(() => {
+  console.log('RERENDERING');
   app.scheduleRerender();
 });
 
